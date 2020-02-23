@@ -8943,7 +8943,7 @@ prop-types-exact@^1.2.0:
     object.assign "^4.1.0"
     reflect.ownkeys "^0.2.0"
 
-prop-types@15.7.2, prop-types@^15.5.8, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@15.7.2, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -9234,6 +9234,14 @@ react-final-form@^6.3.0:
   dependencies:
     "@babel/runtime" "^7.4.5"
     ts-essentials "^2.0.8"
+
+react-google-login@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/react-google-login/-/react-google-login-5.1.1.tgz#9d479ccc0aca8ca4c81f4180b02af861869264fe"
+  integrity sha512-va/co9925tDrV3txX7PX9Uzht/vvfE0zPO4j/eyI8HAvdd0oY+QLDY6a8tKO6OD882Kz4ebX3tCES2yjkDwawg==
+  dependencies:
+    "@types/react" "*"
+    prop-types "^15.6.0"
 
 react-google-maps@^9.4.5:
   version "9.4.5"

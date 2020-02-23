@@ -6,6 +6,7 @@ import { Form as FinalForm } from 'react-final-form';
 import classNames from 'classnames';
 import * as validators from '../../util/validators';
 import { Form, PrimaryButton, FieldTextInput } from '../../components';
+import { GoogleLogin } from 'react-google-login';
 
 import css from './SignupForm.css';
 
@@ -129,6 +130,10 @@ const SignupFormComponent = props => (
         </span>
       );
 
+      const responseGoogle = (response) => {
+        console.log(response);
+      }
+
       return (
         <Form className={classes} onSubmit={handleSubmit}>
           <div>
@@ -184,6 +189,13 @@ const SignupFormComponent = props => (
                 />
               </span>
             </p>
+            <GoogleLogin
+              clientId="790591862269-p23k6u1jnsjh680cta3umjbmou47oocn.apps.googleusercontent.com"
+              buttonText="Login"
+              onSuccess={responseGoogle}
+              onFailure={responseGoogle}
+              cookiePolicy={'single_host_origin'}
+            />
             <PrimaryButton type="submit" inProgress={submitInProgress} disabled={submitDisabled}>
               <FormattedMessage id="SignupForm.signUp" />
             </PrimaryButton>
